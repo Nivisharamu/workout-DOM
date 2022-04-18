@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <div id="div1">
+            <p id="p1">This is a paragraph.</p>
+        </div> 
+    <img src="1.png" border="1" width="500" height="350">
+     <script>
+            const para=document.createElement("p");
+            const node=document.createTextNode("This is newly inserted line.");
+            para.appendChild(node);
+            const parent=document.getElementById("div1");
+            const child=document.getElementById("p1");
+            const img=document.getElementsByTagName("img");
+            parent.insertBefore(para,child);
+            parent.insertAfter(img,child);
+            //document.appendChild(node);
+            //para.appendChild(node);
+            </script>
+    </head>
+    <body>
+       
+    </body>
+</html>
